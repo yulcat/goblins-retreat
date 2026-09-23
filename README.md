@@ -1,5 +1,7 @@
 # 고블린은 퇴각 중 · The Last Rig
 
+**[바로 플레이하기](https://yulcat.github.io/goblins-retreat/)** · [출시 검증 기록](reports/RELEASE_VALIDATION.md)
+
 고철 무기를 조립해 마을 사람들을 국경으로 데려가는 브라우저 디펜스입니다. 12×9 갑판에서 형태·방향·인접 관계를 맞추고, 18번의 추격전을 통과합니다.
 
 ## 실행
