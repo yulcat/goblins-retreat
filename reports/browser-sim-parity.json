@@ -1,0 +1,16 @@
+{
+  "seed": 813,
+  "identical": true,
+  "browser": {
+    "seconds": 1343.4999999994354,
+    "hp": 100,
+    "kills": 1320,
+    "rewards": 18
+  },
+  "headless": {
+    "seconds": 1343.4999999994354,
+    "hp": 100,
+    "kills": 1320,
+    "rewards": 18
+  }
+}

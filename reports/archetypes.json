@@ -1,0 +1,4469 @@
+{
+  "created": "2026-09-23T23:05:19.572Z",
+  "results": [
+    {
+      "team": "iron",
+      "seed": 813,
+      "result": "defeat",
+      "wave": 16,
+      "hp": 0,
+      "time": 1379.433333332736,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 2,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 0,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 8732,
+      "result": "defeat",
+      "wave": 10,
+      "hp": 0,
+      "time": 802.8333333332605,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 16651,
+      "result": "defeat",
+      "wave": 16,
+      "hp": 0,
+      "time": 1354.0999999994258,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 2,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 4,
+          "y": 6,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 24570,
+      "result": "defeat",
+      "wave": 11,
+      "hp": 0,
+      "time": 994.9333333330858,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 2,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 32489,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1449.066666666006,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 0,
+          "y": 2,
+          "r": 1
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 0,
+          "y": 0,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 11,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 40408,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1476.566666665981,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 0,
+          "y": 0,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 4,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 8,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 48327,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1439.9666666660144,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 2,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 0,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 0,
+          "y": 0,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 11,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 56246,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1438.5333333326823,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 0,
+          "y": 2,
+          "r": 1
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 11,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 0,
+          "y": 6,
+          "r": 3
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 64165,
+      "result": "defeat",
+      "wave": 11,
+      "hp": 0,
+      "time": 974.8333333331041,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 72084,
+      "result": "defeat",
+      "wave": 11,
+      "hp": 0,
+      "time": 978.5333333331007,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 80003,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1420.5333333326987,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 4,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 8,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 0,
+          "y": 0,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 87922,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1445.7333333326758,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 4,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 0,
+          "y": 0,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 95841,
+      "result": "defeat",
+      "wave": 11,
+      "hp": 0,
+      "time": 993.3999999997538,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 103760,
+      "result": "defeat",
+      "wave": 16,
+      "hp": 0,
+      "time": 1376.7999999994051,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 2,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 2,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 0,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 111679,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1442.7666666660118,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 0,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 2,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 7,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 4,
+          "y": 0,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 119598,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1437.0999999993503,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 4,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 0,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 8,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 0,
+          "y": 8,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 11,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 127517,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1452.2666666660032,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 4,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 0,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 8,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 2,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 135436,
+      "result": "defeat",
+      "wave": 10,
+      "hp": 0,
+      "time": 841.1999999998923,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 2,
+          "y": 3,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 143355,
+      "result": "defeat",
+      "wave": 16,
+      "hp": 0,
+      "time": 1384.5333333327314,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 2,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 2,
+          "x": 4,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 6,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        }
+      ]
+    },
+    {
+      "team": "iron",
+      "seed": 151274,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1446.5999999993417,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 4,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 4,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 7,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 7,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 11,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 0,
+          "y": 0,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 813,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1343.4999999994354,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 1,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 5,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 2,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 8732,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1437.49999999935,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 2,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 16651,
+      "result": "defeat",
+      "wave": 16,
+      "hp": 0,
+      "time": 1309.466666666133,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 4,
+          "y": 0,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 24570,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1369.733333332745,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 2,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 7,
+          "y": 6,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 32489,
+      "result": "defeat",
+      "wave": 16,
+      "hp": 0,
+      "time": 1263.6333333328414,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "flame",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 10,
+          "y": 4,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 40408,
+      "result": "victory",
+      "wave": 18,
+      "hp": 35,
+      "time": 1298.4333333328098,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 1,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "oil",
+          "level": 2,
+          "x": 8,
+          "y": 5,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 48327,
+      "result": "victory",
+      "wave": 18,
+      "hp": 76,
+      "time": 1337.4666666661076,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 1,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 5,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "flame",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 3
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 56246,
+      "result": "victory",
+      "wave": 18,
+      "hp": 64,
+      "time": 1311.9333333327975,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "flame",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 1
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 10,
+          "y": 4,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 64165,
+      "result": "victory",
+      "wave": 18,
+      "hp": 52,
+      "time": 1401.8999999993823,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 2,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "flame",
+          "level": 2,
+          "x": 1,
+          "y": 2,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 10,
+          "y": 4,
+          "r": 1
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 2,
+          "y": 3,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 72084,
+      "result": "victory",
+      "wave": 18,
+      "hp": 64,
+      "time": 1307.266666666135,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "flame",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 1
+        },
+        {
+          "type": "oil",
+          "level": 2,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 10,
+          "y": 4,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 80003,
+      "result": "defeat",
+      "wave": 16,
+      "hp": 0,
+      "time": 1214.7333333328859,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 1,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 4,
+          "y": 0,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 87922,
+      "result": "victory",
+      "wave": 18,
+      "hp": 88,
+      "time": 1370.1999999994111,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "flame",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 1
+        },
+        {
+          "type": "oil",
+          "level": 2,
+          "x": 2,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 10,
+          "y": 4,
+          "r": 1
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 95841,
+      "result": "victory",
+      "wave": 18,
+      "hp": 88,
+      "time": 1376.5999999994053,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 1,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "cooler",
+          "level": 2,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 2,
+          "x": 0,
+          "y": 5,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 103760,
+      "result": "victory",
+      "wave": 18,
+      "hp": 64,
+      "time": 1394.0333333327228,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 1,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 111679,
+      "result": "victory",
+      "wave": 18,
+      "hp": 76,
+      "time": 1402.7666666660482,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 1,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 4,
+          "y": 0,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 2,
+          "x": 5,
+          "y": 5,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 119598,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1310.7666666661319,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 1,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 2,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 2,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 6,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 7,
+          "y": 5,
+          "r": 2
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 127517,
+      "result": "victory",
+      "wave": 18,
+      "hp": 52,
+      "time": 1371.49999999941,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 9,
+          "y": 2,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 135436,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1309.1999999994666,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 2,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 4,
+          "y": 0,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 11,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 0,
+          "y": 6,
+          "r": 3
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 143355,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1454.1999999993348,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "boiler",
+      "seed": 151274,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1446.0999999993421,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 5,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "oil",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 2,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "flame",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 1
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 10,
+          "y": 4,
+          "r": 1
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 2,
+          "y": 3,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 813,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1452.2999999993365,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "battery",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 2,
+          "x": 8,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 8732,
+      "result": "defeat",
+      "wave": 11,
+      "hp": 0,
+      "time": 952.0666666664581,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 2,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 16651,
+      "result": "defeat",
+      "wave": 14,
+      "hp": 0,
+      "time": 1117.4333333329744,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 2,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 24570,
+      "result": "victory",
+      "wave": 18,
+      "hp": 76,
+      "time": 1484.2999999993074,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 32489,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1433.8333333326866,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "battery",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 1
+        },
+        {
+          "type": "battery",
+          "level": 1,
+          "x": 8,
+          "y": 6,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 40408,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1512.3999999992818,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 8,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 2,
+          "r": 3
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 0,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 2,
+          "x": 0,
+          "y": 6,
+          "r": 3
+        },
+        {
+          "type": "battery",
+          "level": 1,
+          "x": 11,
+          "y": 4,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 48327,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1370.7666666660773,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 2,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 2,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 2,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 0,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 0,
+          "y": 6,
+          "r": 3
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 56246,
+      "result": "defeat",
+      "wave": 17,
+      "hp": 0,
+      "time": 1526.933333332602,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 9,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "battery",
+          "level": 2,
+          "x": 1,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 64165,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1472.0333333326519,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 2,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "harpoon",
+          "level": 2,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "battery",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 4,
+          "y": 0,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 72084,
+      "result": "defeat",
+      "wave": 17,
+      "hp": 0,
+      "time": 1518.9666666659425,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 2,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 11,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 80003,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1418.0999999993676,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "battery",
+          "level": 1,
+          "x": 8,
+          "y": 6,
+          "r": 1
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 0,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 0,
+          "y": 7,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 87922,
+      "result": "defeat",
+      "wave": 14,
+      "hp": 0,
+      "time": 1249.9666666661872,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 2,
+          "r": 3
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 9,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 95841,
+      "result": "defeat",
+      "wave": 11,
+      "hp": 0,
+      "time": 972.5333333331062,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 2,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 1,
+          "x": 3,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 2,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 2,
+          "x": 9,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 103760,
+      "result": "defeat",
+      "wave": 16,
+      "hp": 0,
+      "time": 1360.733333332753,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 2,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "battery",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 111679,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1467.2666666659895,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 2,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 2,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 3,
+          "x": 3,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "battery",
+          "level": 1,
+          "x": 8,
+          "y": 6,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 119598,
+      "result": "victory",
+      "wave": 18,
+      "hp": 88,
+      "time": 1432.1666666660215,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 2,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 2,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 2,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 0,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 127517,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1425.1666666660278,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 0,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 1,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 2,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 135436,
+      "result": "defeat",
+      "wave": 16,
+      "hp": 0,
+      "time": 1360.39999999942,
+      "build": [
+        {
+          "type": "nail",
+          "level": 3,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 2,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 11,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 1,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 143355,
+      "result": "victory",
+      "wave": 18,
+      "hp": 40,
+      "time": 1387.0333333327292,
+      "build": [
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 3,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 4,
+          "y": 2,
+          "r": 2
+        },
+        {
+          "type": "mortar",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 1,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "harpoon",
+          "level": 3,
+          "x": 9,
+          "y": 4,
+          "r": 2
+        },
+        {
+          "type": "oil",
+          "level": 1,
+          "x": 7,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "cooler",
+          "level": 1,
+          "x": 8,
+          "y": 6,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 1,
+          "y": 2,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "team": "electric",
+      "seed": 151274,
+      "result": "victory",
+      "wave": 18,
+      "hp": 100,
+      "time": 1512.4999999992817,
+      "build": [
+        {
+          "type": "nail",
+          "level": 2,
+          "x": 6,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 3,
+          "x": 2,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "winch",
+          "level": 1,
+          "x": 4,
+          "y": 5,
+          "r": 2
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 2,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "nail",
+          "level": 1,
+          "x": 6,
+          "y": 3,
+          "r": 0
+        },
+        {
+          "type": "coil",
+          "level": 3,
+          "x": 6,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "saw",
+          "level": 2,
+          "x": 9,
+          "y": 5,
+          "r": 0
+        },
+        {
+          "type": "battery",
+          "level": 3,
+          "x": 1,
+          "y": 2,
+          "r": 0
+        },
+        {
+          "type": "scope",
+          "level": 1,
+          "x": 2,
+          "y": 0,
+          "r": 0
+        },
+        {
+          "type": "feeder",
+          "level": 1,
+          "x": 5,
+          "y": 2,
+          "r": 0
+        }
+      ]
+    }
+  ]
+}

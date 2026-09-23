@@ -1,0 +1,29 @@
+{
+  "created": "2026-09-23T22:50:43.876Z",
+  "mode": "touch",
+  "full": false,
+  "phase": "combat",
+  "wave": 1,
+  "time": 60.033333333332486,
+  "hp": 100,
+  "placements": 2,
+  "kills": 16,
+  "rewards": 1,
+  "seen": [
+    "intro"
+  ],
+  "errors": [],
+  "trace": [
+    {
+      "wave": 0,
+      "time": 0,
+      "hp": 100
+    },
+    {
+      "wave": 1,
+      "time": 60.033333333332486,
+      "hp": 100
+    }
+  ],
+  "overflow": false
+}
