@@ -1,0 +1,79 @@
+{
+  "created": "2026-09-24T06:37:16.067Z",
+  "url": "http://127.0.0.1:4173",
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "input": "mouse",
+      "checks": [
+        "offset drag and explicit commit",
+        "blocked path and edge-clamped drag",
+        "cancelled gesture",
+        "four rotations",
+        "retrieve and undo",
+        "bench re-placement",
+        "saved placement reload",
+        "inspection",
+        "combat edit lock",
+        "four corner ring targets are visible and clickable",
+        "no overflow"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "input": "real touch",
+      "checks": [
+        "offset drag and explicit commit",
+        "blocked path and edge-clamped drag",
+        "cancelled gesture",
+        "four rotations",
+        "retrieve and undo",
+        "bench re-placement",
+        "saved placement reload",
+        "inspection",
+        "combat edit lock",
+        "four corner ring targets are visible and clickable",
+        "no overflow"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "input": "real touch",
+      "checks": [
+        "offset drag and explicit commit",
+        "blocked path and edge-clamped drag",
+        "cancelled gesture",
+        "four rotations",
+        "retrieve and undo",
+        "bench re-placement",
+        "saved placement reload",
+        "inspection",
+        "combat edit lock",
+        "four corner ring targets are visible and clickable",
+        "no overflow"
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "input": "real touch",
+      "checks": [
+        "offset drag and explicit commit",
+        "blocked path and edge-clamped drag",
+        "cancelled gesture",
+        "four rotations",
+        "retrieve and undo",
+        "bench re-placement",
+        "saved placement reload",
+        "inspection",
+        "combat edit lock",
+        "four corner ring targets are visible and clickable",
+        "no overflow"
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -52,3 +52,15 @@
  .story-modal .acting{margin-top:26px;font-size:11px;line-height:1.55}
  .story-line blockquote{font-size:15px;line-height:1.6}
 }
+
+/* Field-mounted assembly controls. The center stays transparent for dragging. */
+.placement-ring{position:absolute;z-index:8;width:0;height:0;pointer-events:none;--rx:66px;--ry:66px}
+.ring-orbit{position:absolute;left:calc(-1 * var(--rx));top:calc(-1 * var(--ry));width:calc(2 * var(--rx));height:calc(2 * var(--ry));border:1px dashed #eed298a0;border-radius:50%;box-shadow:0 0 0 3px #17251d35}
+.ring-action{position:absolute;transform:translate(-50%,-50%);width:52px;height:52px;min-height:52px;border-radius:50%;padding:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;pointer-events:auto;box-shadow:0 3px 10px #000a;border-color:#d4b77e;background:#263c32}
+.ring-action span{font-size:21px;line-height:23px}.ring-caption{position:absolute;left:0;transform:translateX(-50%);width:190px;display:grid;grid-template-columns:1fr 44px;background:#172a23f5;border:1px solid #a38c61;border-radius:6px;text-align:center;box-shadow:0 3px 12px #0006}
+.ring-caption button{pointer-events:auto;padding:3px 8px;font-size:11px;min-height:44px;background:transparent;border:0;box-shadow:none}.ring-caption #cancel-select{font-size:23px}.ring-caption .item-status{grid-column:1/-1;height:22px;display:block;font-size:10px;color:#d7d8b4;white-space:nowrap}
+.placement-ring.invalid .ring-orbit{border-color:#ed9179}.placement-ring.invalid .item-status{color:#ffa78b}.placement-ring.dragging{visibility:hidden}.placement-help{align-self:center;margin-left:6px;color:var(--muted);font-size:11px}.inventory-row{margin-top:6px}
+.game:has(.placement-ring:not(.hidden)) .radio{opacity:0}.game:has(.placement-ring.dragging)>canvas{cursor:grabbing}.game[data-phase=garage]>canvas,.game[data-phase=reward]>canvas{cursor:grab}
+@media(max-width:719px){.placement-help{display:none}.ring-caption{width:180px}}
+
+.game:has(.placement-ring:not(.hidden)) .command-deck .inventory-row,.game:has(.placement-ring:not(.hidden)) .command-deck .deck-heading{display:none}

@@ -21,7 +21,7 @@ await page.screenshot({path:'reports/screenshots/revision-story.png'});while(awa
 await page.locator('[data-item="1"]').click();await page.locator('#stash').click();
 assert.equal(await page.evaluate(()=>window.__rig.snapshot().towers[0].x),null);
 await page.locator('#undo').click();assert.equal(await page.evaluate(()=>window.__rig.snapshot().towers[0].x),4);checks.push('stash and undo preserve tower');
-await page.locator('[data-item="1"]').click();await page.locator('#discard').click();await page.locator('#scrap-item').click();
+await page.locator('[data-item="1"]').click();await page.locator('#info-item').click();await page.locator('#discard').click();await page.locator('#scrap-item').click();
 assert.equal(await page.evaluate(()=>window.__rig.snapshot().towers.length),1);
 await page.locator('#undo').click();assert.equal(await page.evaluate(()=>window.__rig.snapshot().towers.length),2);checks.push('discard and undo restore tower');
 await page.screenshot({path:'reports/screenshots/game-desktop.png',fullPage:true});

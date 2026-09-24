@@ -30,6 +30,7 @@ export class BoardRenderer{
  this.layout={width:w,height:h,dpr,portrait,cell,left,top};
  }
  point(clientX,clientY){this.resize();const b=this.canvas.getBoundingClientRect(),l=this.layout,px=clientX-b.left,py=clientY-b.top;return l.portrait?{x:Math.floor((py-l.top)/l.cell),y:Math.floor(H-(px-l.left)/l.cell)}:{x:Math.floor((px-l.left)/l.cell),y:Math.floor((py-l.top)/l.cell)};}
+ screenPoint(x,y){const l=this.layout;return l.portrait?{x:l.left+(H-y)*l.cell,y:l.top+x*l.cell}:{x:l.left+x*l.cell,y:l.top+y*l.cell};}
  draw(s,selection=null,ghost=null,time=0){this.resize();const c=this.c,l=this.layout;c.setTransform(l.dpr,0,0,l.dpr,0,0);
  if(!this.terrain){this.terrain=document.createElement('canvas');this.terrain.width=l.width*l.dpr;this.terrain.height=l.height*l.dpr;const tc=this.terrain.getContext('2d');tc.scale(l.dpr,l.dpr);drawTerrain(tc,l.width,l.height);}
  c.drawImage(this.terrain,0,0,l.width,l.height);const drive=s.phase==='combat'?s.time:time*.1;
@@ -40,14 +41,14 @@ export class BoardRenderer{
  for(const z of s.zones){const g=c.createRadialGradient(z.x,z.y,.05,z.x,z.y,1.2);g.addColorStop(0,z.fire?'#965624bb':'#171f17c9');g.addColorStop(1,'#182a1600');path(c,`M${z.x-1.1} ${z.y} C${z.x-.8} ${z.y-.65} ${z.x+.45} ${z.y-.7} ${z.x+1.1} ${z.y-.1} Q${z.x+.9} ${z.y+.65} ${z.x-.4} ${z.y+.5} Q${z.x-1.2} ${z.y+.55} ${z.x-1.1} ${z.y}Z`,g,null);if(z.fire)for(let i=0;i<5;i++)flame(c,z.x-.8+i*.37,z.y+.12,.4+Math.sin(i+time)*.15,.12,time+i);else path(c,`M${z.x-.65} ${z.y+.15} Q${z.x} ${z.y-.25} ${z.x+.6} ${z.y+.1}`,null,'#95945c66',.035);}
  const editing=['garage','reward'].includes(s.phase),focus=ghost||s.towers.find(t=>t.id===selection);
  if(focus?.type==='harpoon'&&focus.x!==null)harpoonPreview(c,s,focus,!ghost||canPlace(s,ghost.type,ghost.x,ghost.y,ghost.r,ghost.id));
- for(const t of s.towers){if(t.x===null)continue;const d=ITEMS[t.type],o=origin(t);for(const [x,y] of cells(t)){plate(c,x+.055,y+.08,.89,.83,metal(c,x,y,1,1,'#6e7b65','#3b5041'),editing?TEAMS[d.team].color:'#33493b',.05);for(const [u,v] of [[.14,.18],[.83,.8]])bolt(c,x+u,y+v,.026);}
- if(selection===t.id){if(t.type!=='harpoon')ellipse(c,o.x,o.y,(d.range||.5)+modifiers(s,t).range,(d.range||.5)+modifiers(s,t).range,'#eed29e13','#f5d08eaa',.025);for(const [x,y] of cells(t))plate(c,x+.04,y+.04,.92,.92,'#c3b17433','#f1d597');}
+ for(const t of s.towers){if(t.x===null)continue;c.save();if(ghost?.id===t.id)c.globalAlpha=.28;const d=ITEMS[t.type],o=origin(t);for(const [x,y] of cells(t)){plate(c,x+.055,y+.08,.89,.83,({iron:'#76603d',boiler:'#824c3c',electric:'#376e70'})[d.team]||'#376e70',TEAMS[d.team].color,.05);for(const [u,v] of [[.14,.18],[.83,.8]])bolt(c,x+u,y+v,.026);}
+ if(selection===t.id&&!ghost){if(t.type!=='harpoon')ellipse(c,o.x,o.y,(d.range||.5)+modifiers(s,t).range,(d.range||.5)+modifiers(s,t).range,'#eed29e13','#f5d08eaa',.025);for(const [x,y] of cells(t))plate(c,x+.04,y+.04,.92,.92,'#c3b17433','#f1d597');}
  let angle=d.directional?t.r*Math.PI/2:t.aim;
  if(t.type==='harpoon'&&s.phase==='combat'&&t.shots>0&&Math.abs(Math.atan2(Math.sin(t.aim-angle),Math.cos(t.aim-angle)))<=d.aimHalfAngle)angle=t.aim;
  drawWeapon(c,t.type,o.x,o.y,angle,s.phase==='combat'?s.time:0);
  if(d.directional)directionArrow(c,o,t.r);
  if(t.level>1){for(let i=0;i<t.level;i++)line(c,o.x-.16+i*.16,o.y+.59,o.x-.1+i*.16,o.y+.51,'#f2d087',.04);}
- }
+ c.restore();}
  for(const t of s.towers){if(t.x===null||ITEMS[t.type].support||(!editing&&selection!==t.id))continue;const o=origin(t);for(const id of modifiers(s,t).links){const other=s.towers.find(a=>a.id===id),p=origin(other),d=`M${o.x} ${o.y} Q${(o.x+p.x)/2+.2} ${(o.y+p.y)/2+.2} ${p.x} ${p.y}`;path(c,d,null,'#162b25',.09);path(c,d,null,'#b1d6a0',.036);}}
  for(const e of s.enemies){const p=position(e.p),next=position(e.p+.1),angle=Math.atan2(next.y-p.y,next.x-p.x)+Math.PI/2;c.save();c.translate(p.x,p.y);c.rotate(angle);drawEnemy(c,e,s.time);c.restore();if(e.burn>0)flame(c,p.x+.06,p.y+.1,.55,.18,s.time+e.id);if(e.hold>0)path(c,`M${p.x-.24} ${p.y-.16} Q${p.x+.45} ${p.y-.3} ${p.x+.22} ${p.y+.22} Q${p.x-.4} ${p.y+.4} ${p.x-.24} ${p.y-.16}`,null,'#a5ceab',.036);if(e.hp<e.maxHp){const r=e.type==='boss'?.6:.27;plate(c,p.x-r,p.y-.56,r*2,.075,'#17271f',null,.02);plate(c,p.x-r,p.y-.56,r*2*Math.max(0,e.hp/e.maxHp),.075,'#daba76',null,.015);}}
  for(const shot of s.shots){c.save();if(shot.type==='bullet'){const e=s.enemies.find(e=>e.id===shot.target),p=e?position(e.p):{x:shot.x+.1,y:shot.y};c.translate(shot.x,shot.y);c.rotate(Math.atan2(p.y-shot.y,p.x-shot.x));line(c,-.27,0,.02,0,'#ffe1a866',.03);path(c,'M-.1 -.024 L.09 -.024 Q.17 0 .09 .024 L-.1 .024Z','#ece0b8','#826f49',.008);line(c,-.095,-.05,-.095,.05,'#d8c495',.025);}else{const f=1-shot.ttl/shot.total,x=shot.sx+(shot.tx-shot.sx)*f,y=shot.sy+(shot.ty-shot.sy)*f-Math.sin(f*Math.PI)*1.6;ellipse(c,shot.tx,shot.ty,shot.radius,shot.radius,'#ed9c4e08','#deba7877',.018);c.translate(x,y);c.rotate(Math.atan2(shot.ty-shot.sy-Math.cos(f*Math.PI)*4,shot.tx-shot.sx));path(c,'M-.15 -.09 L.07 -.09 Q.25 0 .07 .09 L-.15 .09 Z',metal(c,-.15,-.1,.4,.2,'#bbb99b','#4c5c4b'),'#263c31',.02);path(c,'M-.11 -.08 L-.24 -.15 L-.2 0 L-.24 .15 L-.11 .08','#bdaa78');}c.restore();}

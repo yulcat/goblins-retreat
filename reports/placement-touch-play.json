@@ -1,0 +1,31 @@
+{
+  "created": "2026-09-24T06:36:07.731Z",
+  "mode": "touch",
+  "full": false,
+  "seed": 8732,
+  "phase": "combat",
+  "wave": 1,
+  "time": 60.033333333332486,
+  "hp": 94,
+  "placements": 2,
+  "kills": 23,
+  "rewards": 1,
+  "seen": [
+    "intro",
+    "firstRush"
+  ],
+  "errors": [],
+  "trace": [
+    {
+      "wave": 0,
+      "time": 0,
+      "hp": 100
+    },
+    {
+      "wave": 1,
+      "time": 60.033333333332486,
+      "hp": 94
+    }
+  ],
+  "overflow": false
+}

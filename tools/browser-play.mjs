@@ -2,7 +2,7 @@ import {createRequire} from 'node:module';
 import {homedir} from 'node:os';
 import {mkdir,writeFile} from 'node:fs/promises';
 import {bestPlacement,placementScore,botReward} from './bot.mjs';
-import {clone} from '../src/sim.js';
+import {clone,cells,possiblePlacements} from '../src/sim.js';
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.PLAYWRIGHT_PATH||`${homedir()}/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright`);
 const mobile=process.argv.includes('--mobile'),full=process.argv.includes('--full'),seed=Number(process.env.TEST_SEED||8732);
@@ -17,13 +17,16 @@ const click=async selector=>{const el=page.locator(selector);if(mobile)await el.
 await click('#new-game');
 async function stories(){while(await page.locator('#story-next').count())await click('#story-next');}
 async function snapshot(){return page.evaluate(()=>window.__rig.snapshot());}
-async function selectItem(id){for(let n=0;n<20&&!await page.locator(`[data-item="${id}"]`).count();n++){if(await page.locator('#inv-next').isEnabled())await click('#inv-next');else while(await page.locator('#inv-prev').isEnabled())await click('#inv-prev');}await click(`[data-item="${id}"]`);}
-async function put(t,p){await selectItem(t.id);for(let i=0;i<(p.r-t.r+4)%4;i++)await click('#rotate');const box=await page.locator('#board').boundingBox(),l=await page.evaluate(()=>window.__rig.layout()),px=l.portrait?l.left+(9-p.y-.5)*l.cell:l.left+(p.x+.5)*l.cell,py=l.portrait?l.top+(p.x+.5)*l.cell:l.top+(p.y+.5)*l.cell;
-if(mobile)await page.touchscreen.tap(box.x+px,box.y+py);else await page.mouse.click(box.x+px,box.y+py);
-await click('#confirm-place');
-const after=await snapshot(),moved=after.towers.find(a=>a.id===t.id);if(moved.x!==p.x||moved.y!==p.y||moved.r!==p.r)throw Error(`UI placement mismatch ${t.id}`);
-await click('#cancel-select');
+async function selectItem(id){if(await page.locator('#cancel-select').count())await click('#cancel-select');for(let n=0;n<20&&!await page.locator(`[data-item="${id}"]`).count();n++){if(await page.locator('#inv-next').isEnabled())await click('#inv-next');else while(await page.locator('#inv-prev').isEnabled())await click('#inv-prev');}await click(`[data-item="${id}"]`);}
+async function put(t,p){
+ await selectItem(t.id);const start=t.x===null?{...t,...possiblePlacements(await snapshot(),t.type,t.id)[0]}:t;
+ for(let i=0;i<(p.r-start.r+4)%4;i++)await click('#rotate');
+ const grab=cells({...start,r:p.r})[0],l=await page.evaluate(()=>window.__rig.layout()),point=(x,y)=>({x:l.portrait?l.left+(9-y-.5)*l.cell:l.left+(x+.5)*l.cell,y:l.portrait?l.top+(x+.5)*l.cell:l.top+(y+.5)*l.cell}),from=point(...grab),to=point(p.x+grab[0]-start.x,p.y+grab[1]-start.y);
+ if(mobile){const cdp=await context.newCDPSession(page);await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{...from,id:1}]});for(let i=1;i<=6;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:from.x+(to.x-from.x)*i/6,y:from.y+(to.y-from.y)*i/6,id:1}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await cdp.detach();}
+ else{await page.mouse.move(from.x,from.y);await page.mouse.down();await page.mouse.move(to.x,to.y,{steps:6});await page.mouse.up();}
+ await click('#confirm-place');const after=await snapshot(),moved=after.towers.find(a=>a.id===t.id);if(moved.x!==p.x||moved.y!==p.y||moved.r!==p.r)throw Error(`UI placement mismatch ${t.id}`);
 }
+
 await stories();
 if(full)await click('#speed');
 let iterations=0,lastWave=-1,placements=0;
@@ -41,5 +44,5 @@ while(iterations++<(full?500:20)){
 await stories();const s=await snapshot();await mkdir('reports/screenshots',{recursive:true});
 await page.screenshot({path:`reports/screenshots/${mobile?'touch':'mouse'}-${full?'full':'play'}.png`,fullPage:true});
 const report={created:new Date().toISOString(),mode:mobile?'touch':'mouse',full,seed:s.seed,phase:s.phase,wave:s.wave,time:s.time,hp:s.hp,placements,kills:s.kills,rewards:s.rewards,seen:s.seen,errors,trace,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth||document.documentElement.scrollHeight>innerHeight)};
-await writeFile(`reports/revision-${mobile?'touch':'mouse'}-${full?'full':'play'}-${seed}.json`,JSON.stringify(report,null,2));console.log(report);await browser.close();
+await writeFile(process.env.REPORT_PATH||`reports/revision-${mobile?'touch':'mouse'}-${full?'full':'play'}-${seed}.json`,JSON.stringify(report,null,2));console.log(report);await browser.close();
 if(errors.length||report.overflow||(full&&s.phase!=='victory'))process.exitCode=1;
