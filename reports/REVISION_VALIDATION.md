@@ -53,4 +53,11 @@
 - `balance-revision-20.json`: 개발용 20개×3정책
 - `balance-revision-preview.json`, `revision-touch-play.json`: 강습병을 추가하기 전의 중간 기록. 현재 난이도 근거로 사용하지 않음
 
-공개 서버의 파일 일치와 공개 주소 브라우저 검사는 배포 후 추가한다.
+## 공개 배포 확인
+
+- 공개 게임: https://yulcat.github.io/goblins-retreat/
+- 게임 소스 커밋: `5741d757fd5fd922cc0986bad502ce9d02756f48`
+- Pages 빌드·배포 성공: https://github.com/yulcat/goblins-retreat/actions/runs/35939402665
+- 2026-09-24 09:41 KST에 HTML·CSS·JavaScript 전체 7개 파일의 HTTP 200 및 로컬 빌드 SHA-256 일치를 확인했다. `src/art.js`도 공개 서버에서 정상 제공된다.
+- 공개 주소에서 4개 화면 크기, 저장·대사 복원, 편집 되돌리기, 보상 재선택, 보조 재시도 검사를 다시 통과했다. 실행 오류 0, 가로·세로 넘침 0.
+- 근거: `revision-deployment.json`, `revision-hosted-smoke.json`. 이 두 파일과 본 배포 기록만 추가하는 후속 커밋은 배포된 게임 파일을 변경하지 않는다.
