@@ -14,3 +14,7 @@ Occupied plates remain brass / rust / turquoise for the iron / boiler / electric
 - Harpoon regression: orientation hints, committed rotation, details, actual shots and nonzero damage on mouse and touch.
 - Real touch play from the opening through the second pursuit: two placements, one earned reward, no browser errors. This is an interaction regression, not a new complete-run balance evaluation; combat rules and numerical balance were not changed.
 - Screenshots inspected for footprint contrast, orbit controls and compact landscape caption placement. Screenshots are local diagnostic artifacts; JSON results are checked in.
+
+## Published verification
+
+Source commit `dcecb1d312b5bb774cb36d760e20c8e296115d65` was deployed successfully by [Pages run 35965421854](https://github.com/yulcat/goblins-retreat/actions/runs/35965421854). All seven public game files matched the tested build by SHA-256 (`placement-deployment.json`). The same four-size mouse/touch placement suite passed on the public Pages URL with no browser errors (`placement-hosted.json`).
