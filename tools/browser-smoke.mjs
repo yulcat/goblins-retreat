@@ -11,12 +11,13 @@ const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[],
 page.on('pageerror',e=>errors.push(e.message));
 await page.clock.install();
 await page.goto(process.env.TEST_URL||'http://127.0.0.1:4173');
+await page.keyboard.press('Escape');
 await page.screenshot({path:'reports/screenshots/home-desktop.png',fullPage:true});
 await page.locator('#new-game').click();
 assert.equal(await page.locator('#story-next').count(),1);
 await page.reload();await page.locator('#continue-game').click();
 assert.equal(await page.locator('#story-next').count(),1);checks.push('unfinished intro restored after reload');
-for(let i=0;i<3;i++)await page.locator('#story-next').click();
+await page.screenshot({path:'reports/screenshots/revision-story.png'});while(await page.locator('#story-next').count())await page.locator('#story-next').click();
 await page.locator('[data-item="1"]').click();await page.locator('#stash').click();
 assert.equal(await page.evaluate(()=>window.__rig.snapshot().towers[0].x),null);
 await page.locator('#undo').click();assert.equal(await page.evaluate(()=>window.__rig.snapshot().towers[0].x),4);checks.push('stash and undo preserve tower');
@@ -24,13 +25,15 @@ await page.locator('[data-item="1"]').click();await page.locator('#discard').cli
 assert.equal(await page.evaluate(()=>window.__rig.snapshot().towers.length),1);
 await page.locator('#undo').click();assert.equal(await page.evaluate(()=>window.__rig.snapshot().towers.length),2);checks.push('discard and undo restore tower');
 await page.screenshot({path:'reports/screenshots/game-desktop.png',fullPage:true});
-const sizes=[];for(const [width,height] of [[320,640],[390,844],[768,1024],[1280,720]]){
- await page.setViewportSize({width,height});const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);assert.equal(overflow,false);sizes.push({width,height,overflow});
- if(width===390)await page.screenshot({path:'reports/screenshots/game-mobile.png',fullPage:true});
+const sizes=[];for(const [width,height] of [[320,568],[390,844],[768,1024],[1280,720]]){
+ await page.setViewportSize({width,height});const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth||document.documentElement.scrollHeight>innerHeight);assert.equal(overflow,false);sizes.push({width,height,overflow});
+ if(width===390)await page.screenshot({path:'reports/screenshots/game-mobile.png'});
+ for(const [open,close] of [['#intel','#intel-close'],['#combos','#combo-close'],['#journal','#close-journal'],['#game-options','#close-options']]){await page.locator(open).click();const clipping=await page.locator('.modal').evaluate(e=>({scroll:e.scrollHeight>e.clientHeight+1,offscreen:e.getBoundingClientRect().bottom>innerHeight}));assert.deepEqual(clipping,{scroll:false,offscreen:false},`${width} ${open}`);await page.locator(close).click();}
+
 }
 await page.locator('#resume').click();await page.locator('#pause').click();
 assert.equal(await page.locator('#pause-banner').isVisible(),true);checks.push('combat pause button');
-await page.locator('#menu').click();await page.locator('#continue-game').click();
+await page.locator('#game-options').click();await page.locator('#menu').click();await page.locator('#continue-game').click();
 assert.equal(await page.locator('#pause-banner').isVisible(),true);checks.push('saved combat continues paused');
 await page.locator('#unpause').click();await page.locator('#speed').click();
 for(let i=0;i<100&&(await page.evaluate(()=>window.__rig.snapshot().phase))==='combat';i++)await page.clock.runFor(1000);
@@ -42,4 +45,4 @@ const fixture=createGame(88);fixture.wave=6;fixture.hp=42;resume(fixture);fixtur
 await contextFixture();
 async function contextFixture(){await page.addInitScript(raw=>localStorage.setItem('last-rig-save-v1',raw),serialize(fixture));await page.reload();await page.locator('#continue-game').click();await page.locator('#assist').click();const retry=await page.evaluate(()=>window.__rig.snapshot());assert.equal(retry.wave,6);assert.equal(retry.hp,140);assert.equal(retry.phase,'garage');checks.push('assisted checkpoint button restores build with 140 engine HP');}
 const report={created:new Date().toISOString(),checks,sizes,errors};
-report.url=process.env.TEST_URL||'http://127.0.0.1:4173';await writeFile(process.env.TEST_URL?'reports/browser-hosted-smoke.json':'reports/browser-smoke.json',JSON.stringify(report,null,2));console.log(report);await browser.close();assert.equal(errors.length,0);
+report.revision='fullscreen-painted-rush';report.url=process.env.TEST_URL||'http://127.0.0.1:4173';await writeFile(process.env.TEST_URL?'reports/revision-hosted-smoke.json':'reports/revision-smoke.json',JSON.stringify(report,null,2));console.log(report);await browser.close();assert.equal(errors.length,0);

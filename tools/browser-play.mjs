@@ -5,21 +5,22 @@ import {bestPlacement,placementScore,botReward} from './bot.mjs';
 import {clone} from '../src/sim.js';
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.PLAYWRIGHT_PATH||`${homedir()}/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright`);
-const mobile=process.argv.includes('--mobile'),full=process.argv.includes('--full');
+const mobile=process.argv.includes('--mobile'),full=process.argv.includes('--full'),seed=Number(process.env.TEST_SEED||8732);
 const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
 const context=await browser.newContext({viewport:mobile?{width:390,height:844}:{width:1440,height:1000},hasTouch:mobile,isMobile:mobile});
 const page=await context.newPage(),errors=[],trace=[];
 page.on('pageerror',e=>errors.push(e.message));
-await page.clock.install({time:new Date(813)});
-await page.clock.setFixedTime(new Date(813));
-await page.goto('http://127.0.0.1:4173');
+await page.clock.install({time:new Date(seed)});
+await page.clock.setFixedTime(new Date(seed));
+await page.goto(process.env.TEST_URL||'http://127.0.0.1:4173');
 const click=async selector=>{const el=page.locator(selector);if(mobile)await el.tap();else await el.click();};
 await click('#new-game');
 async function stories(){while(await page.locator('#story-next').count())await click('#story-next');}
 async function snapshot(){return page.evaluate(()=>window.__rig.snapshot());}
-async function put(t,p){await click(`[data-item="${t.id}"]`);for(let i=0;i<(p.r-t.r+4)%4;i++)await click(mobile?'#touch-rotate':'#rotate');await page.locator('#board').scrollIntoViewIfNeeded();const box=await page.locator('#board').boundingBox(),portrait=box.width<box.height,cell=Math.min(box.width/(portrait?10.4:13.4),box.height/(portrait?13.4:10.4)),mx=(box.width-(portrait?9:12)*cell)/2,my=(box.height-(portrait?12:9)*cell)/2,px=portrait?box.width-mx-(p.y+.5)*cell:mx+(p.x+.5)*cell,py=portrait?my+(p.x+.5)*cell:my+(p.y+.5)*cell;
+async function selectItem(id){for(let n=0;n<20&&!await page.locator(`[data-item="${id}"]`).count();n++){if(await page.locator('#inv-next').isEnabled())await click('#inv-next');else while(await page.locator('#inv-prev').isEnabled())await click('#inv-prev');}await click(`[data-item="${id}"]`);}
+async function put(t,p){await selectItem(t.id);for(let i=0;i<(p.r-t.r+4)%4;i++)await click('#rotate');const box=await page.locator('#board').boundingBox(),l=await page.evaluate(()=>window.__rig.layout()),px=l.portrait?l.left+(9-p.y-.5)*l.cell:l.left+(p.x+.5)*l.cell,py=l.portrait?l.top+(p.x+.5)*l.cell:l.top+(p.y+.5)*l.cell;
 if(mobile)await page.touchscreen.tap(box.x+px,box.y+py);else await page.mouse.click(box.x+px,box.y+py);
-await click(mobile?'#touch-confirm':'#confirm-place');
+await click('#confirm-place');
 const after=await snapshot(),moved=after.towers.find(a=>a.id===t.id);if(moved.x!==p.x||moved.y!==p.y||moved.r!==p.r)throw Error(`UI placement mismatch ${t.id}`);
 await click('#cancel-select');
 }
@@ -39,6 +40,6 @@ while(iterations++<(full?500:20)){
 }
 await stories();const s=await snapshot();await mkdir('reports/screenshots',{recursive:true});
 await page.screenshot({path:`reports/screenshots/${mobile?'touch':'mouse'}-${full?'full':'play'}.png`,fullPage:true});
-const report={created:new Date().toISOString(),mode:mobile?'touch':'mouse',full,seed:s.seed,phase:s.phase,wave:s.wave,time:s.time,hp:s.hp,placements,kills:s.kills,rewards:s.rewards,seen:s.seen,errors,trace,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)};
-await writeFile(`reports/browser-${mobile?'touch':'mouse'}-${full?'full':'play'}.json`,JSON.stringify(report,null,2));console.log(report);await browser.close();
+const report={created:new Date().toISOString(),mode:mobile?'touch':'mouse',full,seed:s.seed,phase:s.phase,wave:s.wave,time:s.time,hp:s.hp,placements,kills:s.kills,rewards:s.rewards,seen:s.seen,errors,trace,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth||document.documentElement.scrollHeight>innerHeight)};
+await writeFile(`reports/revision-${mobile?'touch':'mouse'}-${full?'full':'play'}-${seed}.json`,JSON.stringify(report,null,2));console.log(report);await browser.close();
 if(errors.length||report.overflow||(full&&s.phase!=='victory'))process.exitCode=1;

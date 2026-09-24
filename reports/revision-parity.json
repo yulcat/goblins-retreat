@@ -1,0 +1,16 @@
+{
+  "created": "2026-09-24T00:38:11.277Z",
+  "seed": 8732,
+  "matchedModes": [
+    "mouse",
+    "touch"
+  ],
+  "expected": {
+    "phase": "victory",
+    "wave": 18,
+    "time": 1313.433333332796,
+    "hp": 100,
+    "kills": 1335,
+    "rewards": 18
+  }
+}

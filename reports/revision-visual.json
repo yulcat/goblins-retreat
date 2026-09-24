@@ -1,0 +1,12 @@
+{
+  "created": "2026-09-24T00:37:54.790Z",
+  "checks": [
+    "59 dialogue lines fit 320×568",
+    "all six help pages fit",
+    "reward detail, upgrade, repair and reroll fit",
+    "14 items reachable through five mobile pages and three desktop pages, including resize",
+    "busy combat rendered in desktop and portrait layouts from a simulator-produced save"
+  ],
+  "errors": [],
+  "fixtureScope": "Rendering and UI only. Not evidence of gameplay completion."
+}
