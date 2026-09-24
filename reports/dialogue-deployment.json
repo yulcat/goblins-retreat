@@ -1,0 +1,50 @@
+{
+  "created": "2026-09-24T01:17:39.362Z",
+  "url": "https://yulcat.github.io/goblins-retreat/",
+  "sourceCommit": "20e39085c770b947b6e92542939cbb7fad72731f",
+  "workflow": "https://github.com/yulcat/goblins-retreat/actions/runs/35942153205",
+  "results": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "e5e367b68271b8c91b9bd340239047c18ab3ffddc432460ad6b1d3819238459a",
+      "matchesBuild": true
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "sha256": "a9b1a4f2301a0c4b28058381a4132ce2b541109cb310b2c3fdafc1e176c1b51f",
+      "matchesBuild": true
+    },
+    {
+      "path": "src/content.js",
+      "status": 200,
+      "sha256": "4eeaab3f614f6305a74aa2ae510ba1f6512181c88c45b1d9e95c700661fa9b56",
+      "matchesBuild": true
+    },
+    {
+      "path": "src/sim.js",
+      "status": 200,
+      "sha256": "cb5244b926f216c9bf6dd6d62fc6ee4047acabfaac94426d6ee21fd2120280bf",
+      "matchesBuild": true
+    },
+    {
+      "path": "src/art.js",
+      "status": 200,
+      "sha256": "06068a579cb6f42b0eb77d2743af5a199db592f20eddff2010a31894af4cc955",
+      "matchesBuild": true
+    },
+    {
+      "path": "src/render.js",
+      "status": 200,
+      "sha256": "b5b9acb74120e320b66f39aa61772871b234374f02dd0ca72fe88244a2100f2d",
+      "matchesBuild": true
+    },
+    {
+      "path": "src/app.js",
+      "status": 200,
+      "sha256": "9a144d6a2ceab0145464bfc09fc98b44a2e53c45a2e424fe04041b122c775c46",
+      "matchesBuild": true
+    }
+  ]
+}
