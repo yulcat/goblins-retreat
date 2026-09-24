@@ -14,7 +14,7 @@ export const TEAMS = {
 export const ITEMS = {
   nail: {name:'못총', short:'점사', team:'iron', shape:[[0,0],[1,0],[2,0]], range:3.2, damage:12, period:1.8, unlock:0, desc:'선두 적에게 못 3발을 점사합니다. 재장전 틈을 보완하세요.', role:'안정적인 단일 사격', color:'#e9bd74'},
   saw: {name:'원형톱', short:'근접', team:'iron', shape:[[0,0],[1,0],[0,1],[1,1]], range:1.8, damage:6, period:.18, unlock:0, desc:'주변 적을 계속 베어냅니다. 굽이 안쪽, 윈치 옆이 명당입니다.', role:'길목의 지속 피해', color:'#dfb682'},
-  harpoon: {name:'작살포', short:'관통', team:'iron', shape:[[0,0],[1,0],[2,0],[0,1]], range:7, damage:52, period:2.4, directional:true, unlock:1, desc:'화살표 방향으로 적 5명을 관통하고 장갑을 무시합니다. 긴 직선을 겨누세요.', role:'긴 직선 관통', color:'#f1cf9a'},
+  harpoon: {name:'작살포', short:'관통', team:'iron', shape:[[0,0],[1,0],[2,0],[0,1]], range:7, damage:52, period:2.4, directional:true, aimHalfAngle:Math.PI/3, pierceWidth:.35, maxTargets:5, unlock:1, desc:'전방 120도 안의 적을 자동 조준합니다. 발사된 작살은 직선상의 최대 5명을 관통하고 장갑을 무시합니다.', role:'전방 자동 조준 · 직선 관통', color:'#f1cf9a'},
   mortar: {name:'깡통 박격포', short:'포격', team:'boiler', shape:[[0,0],[1,0],[2,0],[1,1]], range:5.5, minRange:1.5, damage:38, period:3.1, unlock:1, desc:'밀집 지점에 0.9초 뒤 포탄이 떨어집니다. 빠른 적은 놓칩니다.', role:'지연 광역 폭발', color:'#ed9472'},
   flame: {name:'화염 분사기', short:'화염', team:'boiler', shape:[[0,0],[0,1],[1,1]], range:3.2, damage:6, period:.2, directional:true, unlock:2, desc:'앞쪽 부채꼴에 화염을 뿜습니다. 2초 분사 후 2초 냉각합니다.', role:'부채꼴 · 화상 · 점화', color:'#ff9a5a'},
   coil: {name:'전격 코일', short:'연쇄', team:'electric', shape:[[1,0],[2,0],[0,1],[1,1]], range:3.4, damage:28, period:1.7, unlock:2, desc:'적 4명 사이로 번개가 이어집니다. 가까이 모인 무리에게 강합니다.', role:'군집 연쇄 사격', color:'#82d5ce'},

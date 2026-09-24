@@ -52,10 +52,31 @@ export function reroll(s){if(s.phase!=='reward'||s.rerolls<1)return false;s.rero
 function spawn(s,type){const def=ENEMIES[type],scale=1+s.wave*.19+s.wave*s.wave*(type==='boss'?.01:.021);const e={id:s.nextId++,type,p:0,hp:def.hp*scale,maxHp:def.hp*scale,armor:def.armor,speed:def.speed*(1+s.wave*.01),slow:1,hold:0,holdImmune:0,burn:0,burnDps:0,burnOwner:null,lastIron:null,exposed:0,shardCd:0,aura:1,age:0};s.enemies.push(e);}
 function hit(s,e,raw,t,kind='normal',chain=false){if(e.hp<=0)return;const ss=s._sets||sets(s),team=t?ITEMS[t.type].team:null;let value=raw,bonus=0;if(team==='iron'&&ss.iron>=2&&e.lastIron&&e.lastIron!==t.type){bonus+=raw*.25;e.exposed=2;}if(team==='iron')e.lastIron=t.type;value+=bonus;if(kind!=='burn'&&kind!=='shock'&&kind!=='pierce')value=Math.max(value*.3,value-e.armor);const real=Math.min(e.hp,value);e.hp-=value;s.stats.damage+=real;if(t){t.damage+=real;s.stats.byType[t.type]=(s.stats.byType[t.type]||0)+real;}if(bonus){s.stats.comboDamage+=Math.min(bonus,real);s.stats.synergyHits++;}if(team==='iron'&&ss.iron>=3&&e.exposed>0&&e.shardCd<=0&&!chain){e.shardCd=1;const p=position(e.p);effect(s,'spark',{...p,color:'#eac16f'});for(const other of s.enemies)if(other.id!==e.id&&other.hp>0&&distance(position(other.p),p)<1.25){hit(s,other,raw*.25,t,'shard',true);s.stats.comboDamage+=raw*.25;}}if(e.hp<=0){s.kills++;if(t)t.kills++;effect(s,'death',{...position(e.p),color:ENEMIES[e.type].color,life:.6,maxLife:.6});emit(s,'kill',{enemy:e.type});}}
 function inArc(t,p,range,wide=false){const o=origin(t),dx=p.x-o.x,dy=p.y-o.y,dir=[[1,0],[0,1],[-1,0],[0,-1]][t.r%4],forward=dx*dir[0]+dy*dir[1],side=Math.abs(dx*dir[1]-dy*dir[0]);return forward>=0&&forward<=range&&(wide?side<=forward*.85+.3:side<=.85);}
-function attack(s,t,mod,ss){const d=ITEMS[t.type],o=origin(t),range=d.range+(mod.range||0),level=1+(t.level-1)*.7;const viable=s.enemies.filter(e=>e.hp>0&&distance(position(e.p),o)<=range&&distance(position(e.p),o)>=(d.minRange||0)).sort((a,b)=>b.p-a.p);let e=viable[0];if(!e)return false;const power=d.damage*level*mod.damage;t.aim=Math.atan2(position(e.p).y-o.y,position(e.p).x-o.x);
+// Acquisition is a forward sector; each shot still pierces one narrow straight line.
+// Combat, board preview and placement policy share this geometry.
+export function harpoonCanAim(t,p,range=ITEMS.harpoon.range,o=origin(t)){
+ const dx=p.x-o.x,dy=p.y-o.y,dist=Math.hypot(dx,dy),angle=t.r*Math.PI/2;
+ return dist>1e-8&&dist<=range+1e-9&&dx*Math.cos(angle)+dy*Math.sin(angle)>=dist*Math.cos(ITEMS.harpoon.aimHalfAngle)-1e-9;
+}
+export function harpoonPathSegments(t,range=ITEMS.harpoon.range){
+ const o=origin(t),out=[];
+ for(let p=0;p<PATH.length-1;p+=.25)if(harpoonCanAim(t,position(p+.125),range,o))out.push([position(p),position(p+.25)]);
+ return out;
+}
+export function harpoonShot(t,enemies,range=ITEMS.harpoon.range){
+ const d=ITEMS.harpoon,o=origin(t),candidates=enemies.filter(e=>e.hp>0&&harpoonCanAim(t,position(e.p),range,o)).sort((a,b)=>b.p-a.p);
+ let best=null;
+ for(const target of candidates){
+  const p=position(target.p),dist=distance(o,p),dx=(p.x-o.x)/dist,dy=(p.y-o.y)/dist;
+  const hits=candidates.map(e=>{const q=position(e.p),x=q.x-o.x,y=q.y-o.y;return{e,forward:x*dx+y*dy,side:Math.abs(x*dy-y*dx)};}).filter(a=>a.forward>=0&&a.forward<=range&&a.side<=d.pierceWidth).sort((a,b)=>a.forward-b.forward).slice(0,d.maxTargets).map(a=>a.e);
+  if(!best||hits.length>best.targets.length)best={targets:hits,angle:Math.atan2(dy,dx),tx:o.x+dx*range,ty:o.y+dy*range};
+ }
+ return best;
+}
+function attack(s,t,mod,ss){const d=ITEMS[t.type],o=origin(t),range=d.range+(mod.range||0),level=1+(t.level-1)*.7;const viable=s.enemies.filter(e=>e.hp>0&&distance(position(e.p),o)<=range&&distance(position(e.p),o)>=(d.minRange||0)).sort((a,b)=>b.p-a.p);let e=viable[0];if(!e)return false;const power=d.damage*level*mod.damage;if(t.type!=='harpoon')t.aim=Math.atan2(position(e.p).y-o.y,position(e.p).x-o.x);
   if(t.type==='nail'){s.shots.push({type:'bullet',x:o.x,y:o.y,target:e.id,speed:12,damage:power,owner:t.id,ttl:2});effect(s,'muzzle',{...o,color:'#fce1a2',life:.12,maxLife:.12});if(t.burst<2){t.burst++;t.cd=.15;}else{t.burst=0;t.cd=d.period*mod.speed;}}
   if(t.type==='saw'){for(const a of viable)hit(s,a,power,t);effect(s,'saw',{...o,color:'#d2b281',life:.16,maxLife:.16});}
-  if(t.type==='harpoon'){const targets=s.enemies.filter(a=>a.hp>0&&inArc(t,position(a.p),range)).sort((a,b)=>distance(position(a.p),o)-distance(position(b.p),o));if(!targets.length)return false;for(const a of targets.slice(0,5))hit(s,a,power,t,'pierce');const dir=[[1,0],[0,1],[-1,0],[0,-1]][t.r];effect(s,'beam',{...o,tx:o.x+dir[0]*range,ty:o.y+dir[1]*range,color:'#f2ce85',life:.2,maxLife:.2});}
+  if(t.type==='harpoon'){const shot=harpoonShot(t,s.enemies,range);if(!shot)return false;t.aim=shot.angle;for(const target of shot.targets)hit(s,target,power,t,'pierce');effect(s,'beam',{...o,tx:shot.tx,ty:shot.ty,color:'#f2ce85',life:.3,maxLife:.3});}
   if(t.type==='mortar'){e=viable.reduce((best,a)=>{const n=s.enemies.filter(b=>b.hp>0&&distance(position(a.p),position(b.p))<1.35).length;return n>best.n?{e:a,n}:best;},{e,n:0}).e;const p=position(e.p);s.shots.push({type:'shell',...o,sx:o.x,sy:o.y,tx:p.x,ty:p.y,ttl:.9,total:.9,damage:power,owner:t.id,radius:ss.boiler>=3?1.62:1.35,burn:ss.boiler>=3});}
   if(t.type==='flame'){const active=t.age%(2+2*mod.speed)<2;if(!active)return false;const targets=viable.filter(a=>inArc(t,position(a.p),range,true));if(!targets.length)return false;for(const a of targets){hit(s,a,power,t);a.burn=2;a.burnDps=7*level*(ss.boiler>=2?1.4:1);a.burnOwner=t.id;}for(const z of s.zones)if(inArc(t,z,range,true))z.fire=true;effect(s,'flame',{...o,r:t.r,range,color:'#fc9059',life:.22,maxLife:.22});}
   if(t.type==='coil'){let current=e,visited=new Set(),p=o;for(let n=0;n<4+(ss.electric>=2?1:0);n++){if(!current)break;visited.add(current.id);const q=position(current.p);hit(s,current,power*(n? .8:1),t);effect(s,'bolt',{x:p.x,y:p.y,tx:q.x,ty:q.y,color:'#8ef5e0',life:.3,maxLife:.3});p=q;current=s.enemies.filter(a=>a.hp>0&&!visited.has(a.id)&&distance(position(a.p),p)<1.9+mod.chain).sort((a,b)=>distance(position(a.p),p)-distance(position(b.p),p))[0];}}

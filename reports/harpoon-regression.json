@@ -1,0 +1,604 @@
+{
+  "created": "2026-09-24T06:10:57.057Z",
+  "baselineCommit": "63da622f07a0cb5c94746b5d7019cb96e772ddde",
+  "scope": "Same seed 813, one level-1 harpoon, all 35 legal placements on the opening deck, ordinary enemy schedule; rewards disabled to isolate the weapon.",
+  "beforeSilent": 22,
+  "afterSilent": 0,
+  "results": [
+    {
+      "x": 0,
+      "y": 2,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 15,
+        "damage": 972,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 15,
+        "damage": 920,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 920,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "r": 0,
+      "before": {
+        "shots": 14,
+        "damage": 677,
+        "hp": 56,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 920,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "r": 0,
+      "before": {
+        "shots": 14,
+        "damage": 677,
+        "hp": 56,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 998,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "r": 0,
+      "before": {
+        "shots": 14,
+        "damage": 677,
+        "hp": 56,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 920,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "r": 0,
+      "before": {
+        "shots": 14,
+        "damage": 677,
+        "hp": 56,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 868,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "r": 0,
+      "before": {
+        "shots": 14,
+        "damage": 677,
+        "hp": 56,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 868,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "r": 0,
+      "before": {
+        "shots": 15,
+        "damage": 972,
+        "hp": 88,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 998,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 18,
+        "damage": 946,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 17,
+        "damage": 946,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 920,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 17,
+        "damage": 920,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 920,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 17,
+        "damage": 946,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 17,
+        "damage": 866,
+        "hp": 78,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "r": 0,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 11,
+        "damage": 367,
+        "hp": 27,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 10,
+        "damage": 315,
+        "hp": 27,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 761,
+        "hp": 60,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 18,
+        "damage": 972,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 17,
+        "damage": 972,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 1050,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 18,
+        "damage": 1076,
+        "hp": 100,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 17,
+        "damage": 998,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 17,
+        "damage": 1050,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "r": 2,
+      "before": {
+        "shots": 15,
+        "damage": 920,
+        "hp": 88,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 998,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "r": 2,
+      "before": {
+        "shots": 13,
+        "damage": 650,
+        "hp": 51,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 20,
+        "damage": 920,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "r": 2,
+      "before": {
+        "shots": 13,
+        "damage": 650,
+        "hp": 51,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 19,
+        "damage": 972,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "r": 2,
+      "before": {
+        "shots": 13,
+        "damage": 650,
+        "hp": 51,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 18,
+        "damage": 972,
+        "hp": 88,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "r": 2,
+      "before": {
+        "shots": 13,
+        "damage": 650,
+        "hp": 51,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 20,
+        "damage": 946,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "r": 2,
+      "before": {
+        "shots": 13,
+        "damage": 650,
+        "hp": 51,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 18,
+        "damage": 998,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 18,
+        "damage": 1050,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 17,
+        "damage": 998,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "r": 2,
+      "before": {
+        "shots": 0,
+        "damage": 0,
+        "hp": 0,
+        "phase": "defeat"
+      },
+      "after": {
+        "shots": 16,
+        "damage": 998,
+        "hp": 94,
+        "phase": "garage"
+      }
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "r": 3,
+      "before": {
+        "shots": 17,
+        "damage": 920,
+        "hp": 88,
+        "phase": "garage"
+      },
+      "after": {
+        "shots": 17,
+        "damage": 972,
+        "hp": 88,
+        "phase": "garage"
+      }
+    }
+  ]
+}
