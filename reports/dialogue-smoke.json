@@ -1,0 +1,37 @@
+{
+  "created": "2026-09-24T01:15:27.314Z",
+  "checks": [
+    "unfinished intro restored after reload",
+    "stash and undo preserve tower",
+    "discard and undo restore tower",
+    "combat pause button",
+    "saved combat continues paused",
+    "trying a reward can restore the original choice and board",
+    "assisted checkpoint button restores build with 140 engine HP"
+  ],
+  "sizes": [
+    {
+      "width": 320,
+      "height": 568,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "revision": "dialogue-continuity-fixed-layout",
+  "url": "http://127.0.0.1:4173"
+}

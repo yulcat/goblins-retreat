@@ -2,7 +2,7 @@ import {W,H,PATH,PATH_KEYS,ITEMS,ENEMIES,TEAMS} from './content.js';
 import {cells,origin,position,modifiers,canPlace} from './sim.js';
 import {TAU,path,line,ellipse,plate,bolt,metal,flame,drawWeapon,drawGoblin,drawEnemy,drawField,drawTerrain} from './art.js';
 export {drawGoblin,drawWeapon};
-export function portrait(canvas,key,size=150){if(!canvas)return;canvas.width=size*2;canvas.height=size*2;const c=canvas.getContext('2d');c.scale(size*2,size*2);drawGoblin(c,key);}
+export function portrait(canvas,key,size=150,details={}){if(!canvas)return;canvas.width=size*2;canvas.height=size*2;const c=canvas.getContext('2d');c.scale(size*2,size*2);drawGoblin(c,key,details);}
 export function itemIcon(canvas,type){if(!canvas)return;canvas.width=240;canvas.height=170;const c=canvas.getContext('2d');c.translate(116,86);c.scale(61,61);drawWeapon(c,type,0,0,0,0);}
 function smoke(c,x,y,r,alpha=1){c.save();c.globalAlpha*=alpha;const g=c.createRadialGradient(x-r*.2,y-r*.2,.01,x,y,r);g.addColorStop(0,'#c3a57688');g.addColorStop(.6,'#695a4277');g.addColorStop(1,'#353e2f00');path(c,`M${x-r} ${y} C${x-r*1.2} ${y-r*.6} ${x-r*.4} ${y-r*.6} ${x-r*.2} ${y-r} C${x+r*.4} ${y-r*1.1} ${x+r*.8} ${y-r*.6} ${x+r} ${y} C${x+r*1.2} ${y+r*.7} ${x+r*.3} ${y+r} ${x} ${y+r*.7} C${x-r*.7} ${y+r} ${x-r} ${y+r*.4} ${x-r} ${y}Z`,g,null);c.restore();}
 export class BoardRenderer{

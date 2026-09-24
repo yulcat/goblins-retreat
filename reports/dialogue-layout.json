@@ -1,0 +1,99 @@
+{
+  "created": "2026-09-24T01:13:24.886Z",
+  "url": "http://127.0.0.1:4173",
+  "scope": "Saved scene fixtures: fixed geometry, text visibility and pointer advancement; not a narrative-quality score or gameplay completion test.",
+  "results": [
+    {
+      "width": 320,
+      "height": 480,
+      "lines": 88,
+      "button": {
+        "x": 155,
+        "y": 407,
+        "width": 136,
+        "height": 44
+      },
+      "maxMovementPixels": 0,
+      "clipping": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "lines": 88,
+      "button": {
+        "x": 155,
+        "y": 495,
+        "width": 136,
+        "height": 44
+      },
+      "maxMovementPixels": 0,
+      "clipping": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lines": 88,
+      "button": {
+        "x": 225,
+        "y": 633,
+        "width": 136,
+        "height": 44
+      },
+      "maxMovementPixels": 0,
+      "clipping": false
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "lines": 88,
+      "button": {
+        "x": 559,
+        "y": 691,
+        "width": 156,
+        "height": 44
+      },
+      "maxMovementPixels": 0,
+      "clipping": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "lines": 88,
+      "button": {
+        "x": 876,
+        "y": 539,
+        "width": 156,
+        "height": 44
+      },
+      "maxMovementPixels": 0,
+      "clipping": false
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "lines": 88,
+      "button": {
+        "x": 956,
+        "y": 679,
+        "width": 156,
+        "height": 44
+      },
+      "maxMovementPixels": 0,
+      "clipping": false
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lines": 88,
+      "button": {
+        "x": 643,
+        "y": 311,
+        "width": 156,
+        "height": 44
+      },
+      "maxMovementPixels": 0,
+      "clipping": false
+    }
+  ],
+  "errors": []
+}

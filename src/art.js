@@ -59,7 +59,7 @@ export function drawWeapon(c,type,x,y,angle=0,time=0){
  c.restore();
 }
 export function flame(c,x,y,h,w,time=0,angle=0){c.save();c.translate(x,y);c.rotate(angle);for(let i=0;i<3;i++){const f=1-i*.24,lean=Math.sin(time*13+i)*w*.2,g=c.createLinearGradient(0,0,0,-h*f);g.addColorStop(0,i===2?'#fff2b7':'#ee7625');g.addColorStop(.5,i===2?'#ffdc74':'#fda643');g.addColorStop(1,'#ea652000');path(c,`M${-w*f} 0 C${-w*1.1*f} ${-h*.38} ${w*.38+lean} ${-h*.46} ${lean} ${-h*f} C${w*.62+lean} ${-h*.62} ${w*1.25*f} ${-h*.2} ${w*f} 0 Q0 ${h*.14} ${-w*f} 0Z`,g,null);}c.restore();}
-export function drawGoblin(c,key){
+export function drawGoblin(c,key,{badge=true}={}){
  c.save();const bg=c.createLinearGradient(0,0,1,1);bg.addColorStop(0,{rivet:'#857456',boil:'#4f786d',git:'#8c6151'}[key]);bg.addColorStop(1,'#152c29');c.fillStyle=bg;c.fillRect(0,0,1,1);
  // Coat, bent shoulders, stitched lapels and hands give each portrait a lived-in silhouette.
  path(c,'M.07 1 Q.09 .76 .31 .76 L.66 .76 Q.92 .73 .98 1Z',metal(c,0,.72,1,.3,key==='git'?'#995e47':'#626d50','#26382e'));
@@ -82,7 +82,7 @@ export function drawGoblin(c,key){
   path(c,'M.61 .86 Q.7 .72 .78 .77 L.81 .91 L.74 .97Z',skin,'#384f32');path(c,'M.7 .79 L.9 .79 L.88 .97 Q.8 1 .72 .96Z',metal(c,.7,.79,.2,.2,'#e8d8aa','#9f9874'));path(c,'M.9 .82 C1 .78 1 .94 .89 .92',null,'#c1b18b',.034);ellipse(c,.8,.8,.095,.022,'#443b25');path(c,'M.8 .74 C.72 .69 .86 .65 .79 .59',null,'#dadbc055',.018);
  }else{
   path(c,'M.17 .3 L.21 .04 Q.51 -.01 .81 .06 L.87 .33Z',metal(c,.17,.04,.7,.3,'#676955','#353f33'));path(c,'M.18 .27 L.85 .29 L.88 .35 Q.53 .39 .16 .34Z','#954e38','#302e22',.018);
-  path(c,'M.45 .09 Q.5 .16 .59 .09 L.58 .23 Q.52 .3 .46 .23Z','#d9b873','#675332',.016);path(c,'M.46 .11 L.54 .22',null,'#f6d797',.015);path(c,'M.27 .44 L.43 .49 M.6 .44 L.73 .42',null,'#455e3e',.026);path(c,'M.36 .72 Q.53 .8 .68 .68',null,'#35452d',.02);path(c,'M.12 .89 Q.48 .95 .79 .78',null,'#ba9158',.046);bolt(c,.79,.82,.034);
+  if(badge){path(c,'M.45 .09 Q.5 .16 .59 .09 L.58 .23 Q.52 .3 .46 .23Z','#d9b873','#675332',.016);path(c,'M.46 .11 L.54 .22',null,'#f6d797',.015);}path(c,'M.27 .44 L.43 .49 M.6 .44 L.73 .42',null,'#455e3e',.026);path(c,'M.36 .72 Q.53 .8 .68 .68',null,'#35452d',.02);path(c,'M.12 .89 Q.48 .95 .79 .78',null,'#ba9158',.046);bolt(c,.79,.82,.034);
  }
  // Asymmetric freckles, creases and edge light avoid a flat icon face.
  for(let i=0;i<7;i++)ellipse(c,.28+noise(i+4)*.08,.58+noise(i+9)*.09,.008,.005,'#758250');path(c,'M.27 .51 Q.25 .66 .36 .74',null,'#ccd08c55',.013);c.restore();

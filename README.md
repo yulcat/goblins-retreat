@@ -2,6 +2,8 @@
 
 **[바로 플레이하기](https://yulcat.github.io/goblins-retreat/)** · [현재 버전 검증 기록](reports/REVISION_VALIDATION.md) · [첫 출시 기록](reports/RELEASE_VALIDATION.md)
 
+v0.2.1: [대사 연결과 고정 UI 수정 기록](reports/DIALOGUE_CONTINUITY.md). 장면 전환·인물 간 정보 전달을 다시 쓰고, 문장 길이에 관계없이 대사창과 다음 버튼 위치를 유지합니다.
+
 고철 무기를 조립해 마을 사람들을 국경으로 데려가는 브라우저 디펜스입니다. 12×9 갑판에서 형태·방향·인접 관계를 맞추고, 18번의 추격전을 통과합니다.
 
 ## 실행
@@ -54,6 +56,7 @@ node tools/browser-smoke.mjs
 node tools/browser-play.mjs --full
 node tools/browser-play.mjs --mobile --full
 node tools/browser-visual.mjs
+node tools/browser-dialogue.mjs
 ```
 
 브라우저 완주 테스트는 실제 화면 버튼과 포인터 입력을 사용하며 `__rig.snapshot()`으로 읽기 전용 상태를 확인합니다. 기본 시드는 8732이며 `TEST_SEED`로 바꿀 수 있습니다. 813은 현재 자동 정책에서 후반 패배하는 재현 사례입니다. 시계를 가속하고 게임의 배속 버튼을 사용하므로 실제 사람의 체류시간 측정은 아닙니다. 봇 승률도 사람의 승률로 해석하지 않습니다. 시각 검사는 저장 상태 픽스처로 모든 대사·작은 화면·페이지 이동·에셋을 확인하며, 완주 증거와 구분합니다. 정량 결과와 한계는 `reports/`에 기록합니다.
