@@ -33,3 +33,12 @@
 - 동일한 개발 시드 20개×3정책을 검사했다. 기본 배치 18/20, 조합 고려 17/20, 임의 배치 0/20 완주. 이전 동일 시드 결과는 각각 12/20, 15/20, 0/20이었다. 작살포가 일반 배치에서도 작동하게 돼 게임이 더 쉬워진 효과가 있으며, 정책 비교가 인간 승률이나 완전한 밸런스를 증명하지 않는다. 이 수정에서 기존 승률을 맞추기 위해 다른 무기나 적을 바꾸지는 않았다.
 
 근거: `harpoon-regression.json`, `harpoon-browser.json`, `balance-harpoon-20.json`. 브라우저 결과는 Chrome과 터치 모사이며 실물 모바일 기기 성능 측정은 아니다.
+
+## 공개 배포 확인
+
+- 소스 커밋: `3cf3ebda076cdc8bc04d5a5b2e26c7452be71bea`
+- Pages 빌드·배포 성공: https://github.com/yulcat/goblins-retreat/actions/runs/35963424693
+- 공개 주소: https://yulcat.github.io/goblins-retreat/
+- 2026-09-24 15:14 KST에 전체 게임 파일 7개의 HTTP 200 및 로컬 빌드 SHA-256 일치를 확인했다(`harpoon-deployment.json`).
+- 공개 주소에서도 마우스·터치 배치와 회전을 수행한 뒤 각각 3회 발사·유효 피해 96을 확인했다. 고정 축 밖으로 자동 조준했고, 실행 오류·화면 넘침은 없었다(`harpoon-hosted.json`).
+- 후속 검증 기록 커밋은 배포된 게임 소스를 변경하지 않는다.

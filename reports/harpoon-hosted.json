@@ -1,0 +1,32 @@
+{
+  "created": "2026-09-24T06:14:25.485Z",
+  "url": "https://yulcat.github.io/goblins-retreat/",
+  "scope": "Single-weapon regression fixture. Placement, rotation and combat selection use real pointer input; enemies and hits run through the normal simulation.",
+  "results": [
+    {
+      "mode": "mouse",
+      "position": {
+        "x": 2,
+        "y": 2,
+        "r": 0
+      },
+      "shots": 3,
+      "damage": 96,
+      "aimRadians": -1.0280272067880285,
+      "overflow": false
+    },
+    {
+      "mode": "touch",
+      "position": {
+        "x": 2,
+        "y": 2,
+        "r": 0
+      },
+      "shots": 3,
+      "damage": 96,
+      "aimRadians": -1.0280272067880285,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}
